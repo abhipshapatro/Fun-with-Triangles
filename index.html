@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun with Triangles!!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!--Main Container Starts-->
+    <div class="main-container">
+        <!--LeftSide Starts-->
+        <div class="left-side">
+            <ul class="nav">
+                <li><a href="#istriangle">Is Triangle??</a></li>
+                <li><a href="#quiz">Triangle Quiz</a></li>
+                <li><a href="#hypotenuse">Calculate Hypotenuse</a></li>
+                <li><a href="#area">Calculate Area</a></li>
+            </ul>
+        </div>
+        <!--LeftSide Ends-->
+
+        <!-- RightSide Starts -->
+        <div class="right-side">
+
+            <!-- IsTriangle Section -->
+            <section class="istriangle active section" id="istriangle">
+                <div class="container">
+                    <div class="heading">
+                        <h1>Is Triangle??</h1>
+                    </div>
+                    <div class="triangle middle-section">
+                        <label for="angle1">Angle 1(in degrees) :</label>
+                        <input type="number" class="angle-input">
+                        <label for="angle2">Angle 2(in degrees) :</label>
+                        <input type="number" class="angle-input">
+                        <label for="angle3">Angle 3(in degrees) :</label>
+                        <input type="number" class="angle-input">
+                        <button id="is-triangle-btn">Is Triangle <i class="fas fa-question"></i></button>
+                    </div>
+                    <div class="output">
+                        <h2 id="output-message1"></h2>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Quiz Section -->
+            <section class="quiz section" id="quiz">
+                <div class="container">
+                    <div class="heading">
+                        <h1>Triangle quiz</h1>
+                    </div>
+                    <div class="middle-section">
+                        <form class="quiz-form" id="quiz-form">
+                            <div class="question-container">
+                                <p>Question1: What is the third angle for the triangle where angle1 = 45° and angle2 =
+                                    45°?
+                                </p>
+                                <label>
+                                    <input type="radio" name="question1" value="45°"><span
+                                        class="radio-value">45°</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question1" value="90°"><span
+                                        class="radio-value">90°</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question1" value="60°"><span
+                                        class="radio-value">60°</span>
+                                </label>
+                            </div>
+                            <div class="question-container">
+                                <p>Question2: If a triangle has an angle of 90 degrees, what is it called?</p>
+                                <label>
+                                    <input type="radio" name="question2" value="obtuse"><span
+                                        class="radio-value">obtuse</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question2" value="acute"><span
+                                        class="radio-value">acute</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="question2" value="right angled"><span
+                                        class="radio-value">right
+                                        angled</span>
+                                </label>
+                            </div>
+                            <button id="submit-form-btn">Submit Form</button>
+                        </form>
+                    </div>
+                    <div class="output">
+                        <h2 id="output-message2"></h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hypotenuse Section -->
+            <section class="hypotenuse section" id="hypotenuse">
+                <div class="container">
+                    <div class="heading">
+                        <h1>Calculate Hypotenuse</h1>
+                    </div>
+                    <div class="side-container middle-section">
+                        <label for="side1">a(in cm) :</label>
+                        <input type="number" class="side-input">
+                        <label for="side2">b(in cm) :</label>
+                        <input type="number" class="side-input">
+                        <button id="hypotenuse-btn">Calculate Hypotenuse</button>
+                    </div>
+                    <div class="output">
+                        <h2 id="output-message3"></h2>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Area Section -->
+            <section class="area section" id="area">
+                <div class="container">
+                    <div class="heading">
+                        <h1>Calculate Area</h1>
+                    </div>
+                    <div class="side-container middle-section">
+                        <label for="base">base(in cm) :</label>
+                        <input type="number" class="inputs">
+                        <label for="height">height(in cm) :</label>
+                        <input type="number" class="inputs">
+                        <button id="area-btn">Check area</button>
+                    </div>
+                    <div class="output">
+                        <h2 id="output-message4"></h2>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- RightSide Ends -->
+    </div>
+    <!-- Main Container Ends -->
+    <script src="script.js"></script>
+</body>
+
+</html>
